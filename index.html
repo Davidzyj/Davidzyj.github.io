@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PocketStudy Support</title>
+  <title>PocketStudy Support Hub</title>
   <style>
     :root {
       color-scheme: light;
@@ -19,7 +19,7 @@
 
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", sans-serif;
       color: var(--ink);
       background:
         radial-gradient(circle at top right, rgba(165, 99, 43, 0.12), transparent 30%),
@@ -27,7 +27,7 @@
     }
 
     main {
-      max-width: 920px;
+      max-width: 960px;
       margin: 0 auto;
       padding: 48px 20px 80px;
     }
@@ -62,6 +62,11 @@
       line-height: 1.05;
     }
 
+    h2 {
+      margin: 0 0 12px;
+      font-size: 24px;
+    }
+
     p {
       line-height: 1.75;
       font-size: 16px;
@@ -71,6 +76,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 16px;
+      margin-bottom: 16px;
     }
 
     .card {
@@ -80,12 +86,18 @@
       display: block;
     }
 
-    h2 {
-      margin: 0 0 12px;
-      font-size: 24px;
+    .link {
+      color: var(--accent);
+      font-weight: 600;
     }
 
-    .link {
+    .language-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .language-row a {
       color: var(--accent);
       font-weight: 600;
     }
@@ -95,22 +107,31 @@
   <main>
     <section class="hero">
       <p class="eyebrow">PocketStudy</p>
-      <h1>研夹 / PocketStudy</h1>
-      <p>完全离线的学习资料整理与复习支持站点。这里提供 App Store 所需的支持页面与隐私政策，也方便用户快速找到联系方式与常见问题。</p>
+      <h1>PocketStudy Support Hub</h1>
+      <p>This site hosts the public support page and privacy policy for PocketStudy. English is the default language for App Store and global users, with a dedicated Simplified Chinese version available below.</p>
     </section>
 
     <section class="grid">
       <a class="card" href="/pocketstudy/support/">
-        <h2>帮助与支持</h2>
-        <p>查看常见问题、权限说明、OCR 与扫描建议，以及支持联系方式。</p>
-        <p class="link">打开支持页</p>
+        <h2>Support</h2>
+        <p>Open the English support page for FAQ, permission notes, OCR guidance, and contact details.</p>
+        <p class="link">Open English support</p>
       </a>
 
       <a class="card" href="/pocketstudy/privacy/">
-        <h2>隐私政策</h2>
-        <p>查看 PocketStudy 如何在完全离线模式下处理资料、通知与学习记录。</p>
-        <p class="link">打开隐私政策</p>
+        <h2>Privacy Policy</h2>
+        <p>Open the English privacy policy to review how PocketStudy handles data fully on device.</p>
+        <p class="link">Open English privacy policy</p>
       </a>
+    </section>
+
+    <section class="card">
+      <h2>Chinese Version</h2>
+      <p>If you prefer Simplified Chinese, use these localized pages:</p>
+      <div class="language-row">
+        <a href="/pocketstudy/zh-Hans/support/">中文支持页</a>
+        <a href="/pocketstudy/zh-Hans/privacy/">中文隐私政策</a>
+      </div>
     </section>
   </main>
 </body>
