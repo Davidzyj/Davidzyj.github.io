@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研夹 / PocketStudy 支持页</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #1c3440;
+      --muted: #5f7480;
+      --panel: rgba(255, 255, 255, 0.9);
+      --line: rgba(218, 206, 188, 0.85);
+      --accent: #975928;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(151, 89, 40, 0.12), transparent 32%),
+        linear-gradient(180deg, #f8f3ea 0%, #f1e6d7 100%);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .hero,
+    .card {
+      border-radius: 28px;
+      padding: 26px;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: 0 20px 48px rgba(28, 52, 64, 0.08);
+    }
+
+    .hero {
+      color: #fff;
+      background: linear-gradient(135deg, rgba(28, 52, 64, 0.94), rgba(151, 89, 40, 0.86));
+      border: none;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 6vw, 46px);
+      line-height: 1.08;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    .meta {
+      margin: 0 0 18px;
+      color: var(--muted);
+    }
+
+    .card {
+      margin-bottom: 16px;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(151, 89, 40, 0.08);
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PocketStudy Support</p>
+      <h1>离线学习资料整理与复习支持页</h1>
+      <p>研夹 / PocketStudy 当前版本支持资料导入、本地 OCR、本地卡片生成、离线复习与本地提醒。首版重点是把完全离线的学习闭环做好。</p>
+    </section>
+
+    <p class="meta">最后更新：2026-04-27</p>
+
+    <section class="card">
+      <h2>联系方式</h2>
+      <p>支持邮箱：<code>jay212315@gmail.com</code></p>
+      <p>隐私政策：<a href="https://davidzyj.github.io/pocketstudy/privacy/"><code>https://davidzyj.github.io/pocketstudy/privacy/</code></a></p>
+      <p>支持主页：<a href="https://davidzyj.github.io/pocketstudy/support/"><code>https://davidzyj.github.io/pocketstudy/support/</code></a></p>
+    </section>
+
+    <section class="card">
+      <h2>常见问题</h2>
+      <h3>这款 App 会上传我的学习资料吗？</h3>
+      <p>不会。当前版本不提供账号、云同步或资料上传能力，学习资料默认只保存在你的设备本地。</p>
+
+      <h3>为什么需要相机或相册权限？</h3>
+      <p>相机和相册权限用于导入纸质或图片资料，并在设备本地完成 OCR 识别。</p>
+
+      <h3>为什么需要通知权限？</h3>
+      <p>通知权限用于发送本地复习提醒、学习目标完成提醒和学习计划反馈。</p>
+
+      <h3>OCR 或扫描效果不好怎么办？</h3>
+      <ul>
+        <li>优先在光线均匀、页面平整的情况下扫描</li>
+        <li>尽量让纸张边缘完整进入扫描框</li>
+        <li>对低质量图片可先重新拍摄或裁切</li>
+      </ul>
+
+      <h3>删除资料后还能恢复吗？</h3>
+      <p>当前版本没有回收站或云端恢复能力。删除后会从本地数据中移除，请在删除前确认。</p>
+    </section>
+
+    <section class="card">
+      <h2>反馈建议</h2>
+      <ul>
+        <li>机型与系统版本</li>
+        <li>问题发生步骤</li>
+        <li>问题对应的资料类型，例如图片、PDF 或手动录入</li>
+        <li>是否与通知、扫描、OCR 或复习进度有关</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

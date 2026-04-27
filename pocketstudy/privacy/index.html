@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>研夹 / PocketStudy 隐私政策</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #18363a;
+      --muted: #58737a;
+      --panel: #ffffff;
+      --line: #d8cdbc;
+      --accent: #2e6b73;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "PingFang SC", "Helvetica Neue", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(46, 107, 115, 0.10), transparent 32%),
+        linear-gradient(180deg, #f8f3eb 0%, #f2eadf 100%);
+    }
+
+    main {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+
+    .hero,
+    .card {
+      background: rgba(255, 255, 255, 0.88);
+      border: 1px solid rgba(216, 205, 188, 0.7);
+      border-radius: 28px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 20px 48px rgba(24, 54, 58, 0.08);
+    }
+
+    .hero {
+      padding: 28px;
+      margin-bottom: 20px;
+      background: linear-gradient(135deg, rgba(46, 107, 115, 0.92), rgba(99, 138, 127, 0.92));
+      color: #fff;
+      border: none;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 13px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.82;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: clamp(32px, 6vw, 48px);
+      line-height: 1.08;
+    }
+
+    .hero p,
+    .meta {
+      margin: 0;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .meta {
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+
+    .card {
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+
+    h3 {
+      margin: 18px 0 8px;
+      font-size: 18px;
+    }
+
+    p,
+    li {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    code {
+      padding: 2px 6px;
+      border-radius: 8px;
+      background: rgba(46, 107, 115, 0.08);
+      color: var(--accent);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 0.92em;
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PocketStudy Privacy</p>
+      <h1>你的学习资料默认只留在这台设备上</h1>
+      <p>研夹 / PocketStudy 当前版本不提供账号系统、云同步或服务端资料处理能力。首版核心能力围绕离线资料整理、本地 OCR 与本地复习提醒展开。</p>
+    </section>
+
+    <p class="meta">最后更新：2026-04-27</p>
+
+    <section class="card">
+      <h2>我们处理哪些信息</h2>
+      <ul>
+        <li>学习资料标题、正文、摘要、标签与记忆卡片</li>
+        <li>复习记录、连续学习天数、学习计划与成就历史</li>
+        <li>提醒时间、提醒策略、每日目标和每周目标</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>这些信息如何处理</h2>
+      <ul>
+        <li>资料和复习数据保存在设备本地数据库中</li>
+        <li>文档扫描、OCR、摘要与卡片生成在设备本地完成</li>
+        <li>复习提醒通过系统本地通知完成，不依赖远程服务器</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>我们不会做什么</h2>
+      <ul>
+        <li>不会要求你注册账号</li>
+        <li>不会把学习资料上传到开发者服务器</li>
+        <li>不会接入广告 SDK、第三方统计 SDK 或跨 App 跟踪能力</li>
+        <li>不会向第三方出售、共享或披露你的学习内容</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>权限说明</h2>
+      <h3>相机</h3>
+      <p>用于拍摄纸质资料，并在设备本地完成扫描与 OCR 识别。</p>
+
+      <h3>相册</h3>
+      <p>用于选择已有图片资料，并在设备本地完成 OCR 识别。</p>
+
+      <h3>通知</h3>
+      <p>用于发送本地复习提醒、学习目标完成提醒与计划反馈。</p>
+    </section>
+
+    <section class="card">
+      <h2>数据保留与删除</h2>
+      <ul>
+        <li>你创建或导入的资料会保留在当前设备，直到你主动编辑、归档或删除</li>
+        <li>你删除资料或卡片后，对应本地内容会从应用数据中移除</li>
+        <li>如果你卸载应用，相关本地数据是否保留取决于系统备份与恢复策略</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>联系我们</h2>
+      <p>支持邮箱：<code>jay212315@gmail.com</code></p>
+      <p>支持页面：<a href="https://davidzyj.github.io/pocketstudy/support/"><code>https://davidzyj.github.io/pocketstudy/support/</code></a></p>
+    </section>
+  </main>
+</body>
+</html>
