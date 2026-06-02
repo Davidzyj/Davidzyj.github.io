@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapScope Privacy Policy</title>
+  <style>
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:#17202a; background:#fff; }
+    main { max-width:860px; margin:0 auto; padding:48px 24px; }
+    a { color:#0b6f6a; font-weight:600; }
+    h1 { font-size:40px; margin:36px 0 12px; }
+    h2 { margin-top:32px; }
+    p, li { color:#586474; font-size:17px; line-height:1.65; }
+    header, footer { border-bottom:1px solid #d9e1ea; padding-bottom:18px; }
+    footer { border-bottom:0; border-top:1px solid #d9e1ea; margin-top:42px; padding-top:18px; }
+  </style>
+</head>
+<body>
+<main>
+  <header><a href="index.html">SnapScope</a> · <a href="privacy.html?lang=zh">中文</a> · <a href="support.html">Support</a></header>
+  <article id="en">
+    <h1>Privacy Policy</h1>
+    <p>Last updated: June 1, 2026</p>
+    <p>SnapScope is a local-only iPhone app for creating field reports. We designed it to work without accounts, backend services, advertising, analytics, or tracking.</p>
+    <h2>Data Collection</h2>
+    <p>SnapScope does not collect personal data from the app. Report projects, notes, statuses, and exported files are stored locally on your device.</p>
+    <h2>Network Requests</h2>
+    <p>The app does not actively send app data to a server. Support and privacy links may open this website in Safari when you choose them.</p>
+    <h2>Photos And Files</h2>
+    <p>If a future version lets you attach photos or files, those items are intended to remain on device unless you choose to export or share them through iOS.</p>
+    <h2>Third Parties</h2>
+    <p>SnapScope does not include third-party advertising SDKs, analytics SDKs, or tracking SDKs.</p>
+    <h2>Contact</h2>
+    <p>Questions: <a href="mailto:jay212315@gmail.com">jay212315@gmail.com</a></p>
+  </article>
+  <article id="zh" hidden>
+    <h1>隐私政策</h1>
+    <p>最后更新：2026 年 6 月 1 日</p>
+    <p>现场记是一款用于创建现场报告的本地 iPhone 应用。我们设计它时不使用账号、后端服务、广告、分析或追踪。</p>
+    <h2>数据收集</h2>
+    <p>现场记不会从应用内收集个人数据。报告项目、记录、状态和导出文件都保存在你的设备本地。</p>
+    <h2>网络请求</h2>
+    <p>应用不会主动把应用数据发送到服务器。当你主动点击支持或隐私链接时，系统可能会在 Safari 中打开本网站。</p>
+    <h2>照片和文件</h2>
+    <p>如果未来版本支持附加照片或文件，这些内容也将默认保存在设备本地，除非你主动通过 iOS 导出或分享。</p>
+    <h2>第三方</h2>
+    <p>现场记不包含第三方广告 SDK、分析 SDK 或追踪 SDK。</p>
+    <h2>联系方式</h2>
+    <p>如有问题，请联系：<a href="mailto:jay212315@gmail.com">jay212315@gmail.com</a></p>
+  </article>
+  <footer><a href="index.html">Home</a></footer>
+</main>
+<script>
+  const zh = new URLSearchParams(location.search).get('lang') === 'zh' || navigator.language.toLowerCase().startsWith('zh');
+  document.documentElement.lang = zh ? 'zh-Hans' : 'en';
+  document.getElementById('en').hidden = zh;
+  document.getElementById('zh').hidden = !zh;
+</script>
+</body>
+</html>
+

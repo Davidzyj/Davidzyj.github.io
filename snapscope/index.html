@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SnapScope</title>
+  <style>
+    :root { color-scheme: light; --ink:#17202a; --muted:#586474; --line:#d9e1ea; --brand:#0b6f6a; --accent:#dca23a; --paper:#f8fafc; }
+    body { margin:0; font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; color:var(--ink); background:#fff; }
+    main { max-width:920px; margin:0 auto; padding:56px 24px; }
+    header { display:flex; justify-content:space-between; gap:20px; align-items:center; border-bottom:1px solid var(--line); padding-bottom:24px; }
+    nav a { margin-left:16px; color:var(--brand); text-decoration:none; font-weight:600; }
+    h1 { font-size:48px; line-height:1; margin:64px 0 16px; letter-spacing:0; }
+    h2 { margin-top:36px; }
+    p, li { font-size:18px; line-height:1.65; color:var(--muted); }
+    .panel { background:var(--paper); border:1px solid var(--line); border-radius:8px; padding:24px; margin-top:28px; }
+    .badge { color:var(--brand); font-weight:700; }
+    footer { margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <strong>SnapScope / 现场记</strong>
+    <nav>
+      <a href="privacy.html">Privacy</a>
+      <a href="support.html">Support</a>
+      <a href="?lang=zh">中文</a>
+    </nav>
+  </header>
+  <section id="en">
+    <h1>SnapScope</h1>
+    <p class="badge">Offline field reports for iPhone.</p>
+    <p>SnapScope helps you organize site notes, evidence items, severity, and status into a clean local report. It has no account system, no backend, and no tracking.</p>
+    <div class="panel">
+      <h2>What it does</h2>
+      <ul>
+        <li>Create local projects for inspections, maintenance, property checks, and field jobs.</li>
+        <li>Add evidence notes with severity and status.</li>
+        <li>Export a PDF report from your iPhone.</li>
+        <li>Use English or Simplified Chinese.</li>
+      </ul>
+    </div>
+  </section>
+  <section id="zh" hidden>
+    <h1>现场记</h1>
+    <p class="badge">适用于 iPhone 的离线现场报告工具。</p>
+    <p>现场记帮助你把现场记录、证据条目、严重程度和处理状态整理成本地报告。应用无账号、无后端、无追踪。</p>
+    <div class="panel">
+      <h2>主要功能</h2>
+      <ul>
+        <li>为巡检、维修、物业检查和现场任务创建本地项目。</li>
+        <li>添加证据记录，并标记严重程度和处理状态。</li>
+        <li>在 iPhone 上导出 PDF 报告。</li>
+        <li>支持英文和简体中文。</li>
+      </ul>
+    </div>
+  </section>
+  <footer>Contact: <a href="mailto:jay212315@gmail.com">jay212315@gmail.com</a></footer>
+</main>
+<script>
+  const zh = new URLSearchParams(location.search).get('lang') === 'zh' || navigator.language.toLowerCase().startsWith('zh');
+  document.documentElement.lang = zh ? 'zh-Hans' : 'en';
+  document.getElementById('en').hidden = zh;
+  document.getElementById('zh').hidden = !zh;
+</script>
+</body>
+</html>
+
